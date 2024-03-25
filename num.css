@@ -298,15 +298,15 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative; /* Needed for absolute positioning */
-    opacity: 0; /* Initially hide content */
-    transform: translateX(-100%); /* Initially move content outside the view */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition */
+    position: relative; 
+    opacity: 0; 
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 
 .section:hover .content {
     opacity: 1; /* Show content on hover */
-    transform: translateX(0); /* Move content back to its original position */
+    transform: translateX(0); 
 }
 
  .image {
@@ -478,6 +478,7 @@ h3 {
   flex-direction: column;
   align-items: start;
   gap: 20px;
+ 
 }
 .contact-left-title h2{
 font-weight: 600;
@@ -567,6 +568,7 @@ display: flex;
 flex-direction: column;
 align-items: start;
 gap: 20px;
+order: -1;
 }
 .contact-right h2{
 font-weight: 600;
