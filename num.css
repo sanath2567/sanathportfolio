@@ -125,7 +125,7 @@ ul li a:hover{
 .description{
     line-height: 1.5rem;
     color: var(--text-light);
-    margin-bottom: 2rem;
+    margin-bottom: 0.2rem;
 }
 .action_btns{
 display: flex;
@@ -408,6 +408,7 @@ h3 {
   /* projects page */
   .portfolio {
     padding: 20px;
+    background-color:#ffffff;
   
   }
 
@@ -464,26 +465,244 @@ h3 {
   .eef{
     height: 50px;
   }
+/* contact form */
+.contact-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(#ffdad5,#fff7f9);
+}
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contact-left-title h2{
+font-weight: 600;
+color: #a363aa;
+font-size: 40px;
+margin-bottom: 5px;
+}
+.contact-left-title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
 
-  /* For smaller screens, display two images per row */
+
+}
+.contact-inputs{
+  width: 400px;
+  border: none;
+  outline: none;
+  height: 50px;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+
+}
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-inputs:focus{
+  border: 2px solid #a363aa;
+}
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg,#ff994f,#fa6d86);
+}
+.contact-left buttoon img{
+  height: 15px;
+}
+
+.social-media {
+padding: 2rem 0 0 0;
+}
+
+.social-media p {
+color: #333;
+}
+
+.social-icons {
+display: flex;
+margin-top: 0.5rem;
+}
+
+.social-icons a {
+width: 35px;
+height: 35px;
+border-radius: 3px;
+/* background: linear-gradient(45deg, #1abc9c, #149279); */
+background: linear-gradient(270deg,#ff994f,#fa6d86);
+color: #fff;
+text-align: center;
+line-height: 35px;
+margin-right: 1.5rem;
+transition: 0.3s;
+font-size: 20px;
+}
+
+.social-icons a:hover {
+transform: scale(1.05);
+}
+.contact-right{
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: 20px;
+}
+.contact-right h2{
+font-weight: 600;
+color: #a363aa;
+font-size: 40px;
+
+
+}
+.contact-right hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  
+
+}
+.social-media a:hover {
+color: #fff;
+transform: scale(1.05);
+}
+.sp1{
+font-size: 30px;
+}
+.h35{
+font-size: 30px;
+}
+.info img{
+height: 20px;
+width: 20px;
+}
+.contact-right{
+margin-right: 40px;
+}
+.information {
+display: flex;
+color: #555;
+margin: 0.7rem 0;
+align-items: center;
+font-size: 0.95rem;
+}
+.text {
+color: #333;
+margin: 1.5rem 0 2rem 0;
+}
+.info p{
+
+font-size: 18px;
+font-family: "Roboto Serif", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+  "wdth" 100,
+  "GRAD" 0;
+}
+
+  /* Media queries for responsiveness */
+@media (max-width: 800px) {
+.contact-container {
+flex-direction: column;
+align-items: center;
+padding: 30px; 
+height: 150vh;
+}
+
+.contact-left,
+.contact-right {
+width: 100%;
+max-width: 400px; /* Limit the width of both sections */
+padding: 20px; /* Add padding for better spacing */
+}
+
+.contact-left {
+margin-top: 20px; /* Add margin to separate it from contact-right */
+background-color: #fff; /* Add background color for contrast */
+border-radius: 20px; /* Add border radius for rounded corners */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.contact-right {
+order: -1; /* Move contact-right section above contact-left */
+margin-bottom: 30px; /* Add margin to separate it from contact-left */
+text-align: center; /* Center the content */
+}
+
+.contact-inputs {
+width: calc(100% - 60px); 
+}
+
+.contact-left button {
+display: flex;
+align-items: center;
+padding: 15px 30px;
+font-size: 16px;
+color: #fff;
+gap: 10px;
+border: none;
+border-radius: 50px;
+background: linear-gradient(270deg,#ff994f,#fa6d86);
+}
+.social-icons {
+justify-content: center; /* Center the social icons horizontally */
+}
+
+.social-icons a {
+width: 40px; 
+height: 40px; 
+line-height: 40px; 
+font-size: 24px; 
+margin: 0 1.0rem;
+}
+.social-icons p{
+font-size: 20px;
+}
+.information img{
+width: 35px; 
+height: 30px; 
+}
+.contact-left{
+background: linear-gradient(#ffdad5,#fce4ea);
+}
+}
+
+ 
   @media screen and (max-width: 768px) {
     .portfolio-box {
       width: calc(50% - 20px);
     }
   }
- 
- 
- 
- 
- 
- 
- 
- 
   /*  */
     .me{
     color: var(--primary-color);
   }
-  /* Media queries for responsiveness */
+
   @media screen and (max-width: 768px) {
     .portfolio-box {
       width: 45%;
