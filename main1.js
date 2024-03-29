@@ -142,5 +142,13 @@ document.addEventListener('DOMContentLoaded', function() {
   highlightSidebarLink(); // Highlight initial section
 
   window.addEventListener('scroll', highlightSidebarLink);
-  });
+});
+
+var typed = new Typed('#typed-text', {
+  strings: ["OF SRIRAM SANATH", "OF SRIRAM SANATH"],
+  typeSpeed: 30,
+  backSpeed: 30,
+  loop: true
+});
+
 
