@@ -54,10 +54,7 @@
         <h3> <span class="auto-type"></span></h3>
         
       </div>
-      <div class="home-sci">
-        <a href="#"><i class='bx bxl-linkedin'></i></a>
-        <a href="#"><i class='bx bxl-github'></i></a>
-      </div>
+    
     </section>
     
     <section class="section" id="About">
@@ -65,9 +62,7 @@
         <div class="section_container">
             <div class="content">
                 <p class="subtitle">HELLO</p>
-                <h1 class="title">
-                    ABOUT <span class="me">ME</span><br></span> 
-                </h1>
+                <h1 class="title" >ABOUT <span id="typed-text" class="me"></span></h1>
                 <p class="description">
                  
 Hello, and welcome to my profile! I am a dedicated and enthusiastic individual currently pursuing a Bachelor's degree in Technology (BTECH).
@@ -83,7 +78,7 @@ Hello, and welcome to my profile! I am a dedicated and enthusiastic individual c
                 <br>
                 <div class="action_btns">
                     <button class="hire_me">Hire Me</button>
-                    <button class="portfoilo">Resume</button>
+                    <button class="portfoilo"><a href="./Resume.html" class="portfoilo" style="text-decoration: none;">Resume</a></button>
                 </div>
             </div>
             
@@ -167,7 +162,7 @@ Hello, and welcome to my profile! I am a dedicated and enthusiastic individual c
     <div class="portfolio-box">
       <a href="https://sanath2567.github.io/weatherapp/">
         <img src="./images/ttt.jpg" alt="" class="eef">
-        <div class="portfolio-layer">
+        <div class="portfolio-layer">7
           <h4>weather App</h4>
         </div>
       </a>
@@ -267,6 +262,13 @@ Hello, and welcome to my profile! I am a dedicated and enthusiastic individual c
     <script src="main.js">
       
     </script>
-  
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ["ME", "SANATH"],
+      typeSpeed: 300,
+      backSpeed: 200,
+      loop: true
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+  /* Your CSS styles here */
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+  :root {
+    --main-color:#a855f7;
+    --title-color: #242329;
+    --description-color: #454545;
+    --light-color: #BABABA;
+    --bg-light: #F9F9F9;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--title-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+scroll-behavior: smooth;
+}
+  .resume .container {
+    display: flex;
+    column-gap: 100px;
+    padding-top: 70px;
+    position: relative;
+  }
+
+
+  .resume .container .sidebar {
+    background: #fff;
+    height: 280px;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    position: sticky;
+    top: 100px;
+    left: 0;
+  }
+
+  .resume .container .sidebar a {
+    display: block;
+    color: #454545;
+    transition: .3s;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .resume .container .sidebar a:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .active-resume {
+    position: relative;
+    color: var(--main-color) !important;
+    transform: translateX(20px);
+  }
+
+  .active-resume::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: var(--main-color);
+  }
+
+  .resume-item {
+    margin-bottom: 80px;
+  }
+
+  .resume .main-content .box {
+    position: relative;
+    background: #fff;
+    padding: 30px 50px 30px 130px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: .5s;
+  }
+
+  .resume .main-content .box:hover {
+    background: var(--main-color);
+    color: #fff;
+  }
+
+  .resume .main-content .box:hover p {
+    color: #fff;
+    transition: .5s;
+  }
+
+  .resume .main-content .box::before {
+    content: '\f19d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 45px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: .5s;
+  }
+
+  .resume .main-content .box:hover::before {
+    background: #fff;
+    color: var(--main-color);
+  }
+
+  .resume .main-content .box .year {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .resume .main-content .box h3 {
+    margin: 5px 0;
+  }
+
+  .resume .main-content .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #454545;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .resume .container {
+      column-gap: 40px;
+    }
+    .resume .main-content .box {
+      padding: 30px;
+      padding-left: 80px;
+    }
+    .resume .main-content .box::before {
+      left: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .resume .container .sidebar {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 498px) {
+    .resume .container {
+      justify-content: center;
+    }
+    .resume .main-content .box {
+      text-align: center;
+      padding: 20px;
+      padding-top: 80px;
+      width: 300px;
+    }
+    .resume .main-content .box::before {
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+/* Experience */
+.resume .main-content .experience .box::before {
+    content: "\f1ab";
+}
+
+/* Skills  */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.skills-container .progress-bars .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.skills-container .progress-bars .progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    background-color:#9333ea;
+}
+
+  /* Awards */
+  .resume .main-content .awards .box::before {
+    content: "\f0e8";
+}
+@media only screen and (max-width: 992px) {
+    .resume .container {
+        column-gap: 40px;
+    }
+    .resume .main-content .box {
+        padding: 30px;
+        padding-left: 80px;
+    }
+    .resume .main-content .box::before {
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .resume .container .sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .resume .container {
+        justify-content: center;
+    }
+    .resume .main-content .box {
+        text-align: center;
+        padding: 20px;
+        padding-top: 80px;
+        width: 300px;
+    }
+    .resume .main-content .box::before {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    .skills {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 498px) {
+    .container {
+        padding: 0 15px !important;
+    }
+}
+@media only screen and (max-width: 498px) {
+    .container {
+        padding: 0 15px !important;
+    }
+}
+.btn {
+    background-color: var(--main-color);
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    padding: 15px 38px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.section-top-title {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 28px;
+   
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 2px 0 10px;
+}
+
+.section-description-title {
+    text-align: center;
+    color: var(--description-color);
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+@media only screen and (max-width: 498px) {
+    .section-title {
+        font-size: 20px;
+    }
+    .section-description-title {
+        font-size: 12px;
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+
+<section id="resume" class="resume">
+    <h4 class="section-top-title">Resume</h4>
+    <h3 class="section-title" id="typed-text"></h3>
+ 
+    <div class="container">
+        <div class="sidebar">
+            <a class="active-resume" href="#education">Education</a>
+            <a href="#languages">Languages</a>
+            <a href="#skills">Skills</a>
+            <a href="#awards">Projects</a>
+        </div>
+        <div class="main-content">
+            <div id="education" class="resume-item education">
+                <h3 class="title">Education</h3>
+                <div class="box">
+                    <span class="year">2021-present</span>
+                    <h3>Computer Science and Engineering</h3>
+                    <br>
+                    <span>Geethanjali Institute of Science and Technology</span>
+                    <p>I was currently pursuing my Bachelor degree  in  the stream of Computer Science. currently I am in 3rd year </p>
+                </div>
+                <div class="box">
+                    <span class="year">2019 - 2021,</span>
+                    <br>
+                    <br>
+                    <h3>Intermediate</h3>
+                    <br>
+                    <span> DR.B.S.R. Junior College</span>
+                 
+                </div>
+                <div class="box">
+                    <span class="year">2019</span>
+                    <br>
+
+                    <h3>SSC(10th class)</h3>
+                    <br>
+                    
+                    <span>SRISRINIVASA (E.M )HIGH SCHOOL</span>
+                   
+                </div>
+            </div>
+            <div id="languages" class="resume-item experience">
+                <h3 class="title">Languages</h3>
+                <div class="box">
+                   <h3><span class="year">Telugu</span></h3>     
+                    <br>
+                    <br>
+                    <h3>Native or Bilingual Proficiency</h3>
+                   
+                   
+                </div>
+                <div class="box">
+                    
+                    <span class="year">Hindi</span>
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Elementary Proficiency</h3>
+                   
+                </div>
+                <div class="box">
+                    <span class="year">
+                    English
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Professional Working Proficiency</h3>
+                   
+                </div>
+            </div>
+            <div id="skills" class="resume-item skills">
+                <h3 class="title">Skills</h3>
+                <div class="skills-container">
+                    <div class="progress-bars" style="width: 90%;">
+                        <div class="text">
+                            <span>html</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span data-progress="90"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bars" style="width: 60%;">
+                        <div class="text">
+                            <span>css</span>
+                            <span >60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span data-progress="90"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bars" style="width: 40%;">
+                        <div class="text">
+                            <span>javascript</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span data-progress="70"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bars" style="width: 70%;">
+                        <div class="text">
+                            <span>Bootstrap</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span data-progress="80"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bars" style="width: 50%;">
+                        <div class="text">
+                            <span>React Js</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span data-progress="60"></span>
+                        </div>
+                    </div>
+                    <div class="progress-bars" style="width: 15%;">
+                        <div class="text">
+                            <span>NodeJs</span>
+                            <span>15%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span data-progress="75"></span>
+                        </div>
+                    </div>
+                    <h1>Programming Knowledge</h1>
+                    
+                </div>
+                <!-- ================programming========================== -->
+            <div class="skills-container">
+                <div class="progress-bars" style="width: 25%;">
+                    <div class="text">
+                        <span>Cprogramming</span>
+                        <span>25%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <span data-progress="90"></span>
+                    </div>
+                    </div>
+                    <div class="progress-bars" style="width: 40%;">
+                        <div class="text">
+                            <span>Python</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span data-progress="75"></span>
+                        </div>
+                        </div>
+                        <div class="progress-bars" style="width: 50%;">
+                            <div class="text">
+                                <span>JAVA</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <span data-progress="75"></span>
+                            </div>
+                            </div>
+                           
+                </div>
+            </div>
+            <div id="awards" class="resume-item awards">
+                <h3 class="title">Personal Projects</h3>
+                <div class="box">
+                   
+                    <h3>Qr code scanner</h3>
+               
+                </div>
+                <div class="box">
+                   
+                    <h3>Weather website(React js)</h3>
+                  
+                    
+                </div>
+                <div class="box">
+                   
+                    <h3>Reading Website(HTML,CSS,Js)</h3>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<script src="./particles.min.js"></script>
+<script src="./particles.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js"></script>
+
+<script src="./main1.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.resume-item');
+    const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+    function highlightSidebarLink() {
+      let currentSectionId = '';
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= window.innerHeight) {
+          currentSectionId = section.id;
+        }
+      });
+
+      sidebarLinks.forEach(link => {
+        link.classList.remove('active-resume');
+        if (link.getAttribute('href') === '#' + currentSectionId) {
+          link.classList.add('active-resume');
+        }
+      });
+    }
+
+    highlightSidebarLink(); // Highlight initial section
+
+    window.addEventListener('scroll', highlightSidebarLink);
+  });
+
+  var typed = new Typed('#typed-text', {
+    strings: ["OF SRIRAM SANATH", "OF SRIRAM SANATH"],
+    typeSpeed: 30,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+</body>
+</html>

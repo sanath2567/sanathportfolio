@@ -79,3 +79,24 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+// 
+
+
+  window.addEventListener('scroll', function() {
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('nav a');
+
+    sections.forEach(function(section) {
+      let rect = section.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top <= window.innerHeight) {
+        let id = section.getAttribute('id');
+        navLinks.forEach(function(link) {
+          link.classList.remove('highlight');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('highlight');
+          }
+        });
+      }
+    });
+  });
