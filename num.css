@@ -115,7 +115,7 @@ ul li a:hover{
     font-weight: 600;
     line-height: 3rem;
     color: var(--text-dark);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .title span{
     font-weight: 600;
@@ -193,7 +193,7 @@ gap: 1rem;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 1.0); /* Adjust the opacity as needed */
+    background-color: rgba(0, 0, 0, 0.8); 
 }
 /*  */
 .contents h1 {
@@ -263,29 +263,59 @@ h3 {
     flex-direction: column;
     justify-content: center;
     position: relative; 
-    opacity: 0; 
+    opacity:1; 
     transform: translateX(-100%);
-    /* transition: opacity 0.5s ease, transform 0.5s ease;  */
+    /* transition: opacity 1.5s ease, transform 0.2s ease;  */
 }
 
 .section:hover .content {
-    opacity: 1;
+    opacity: 2;
     transform: translateX(0); 
+      /* transition: opacity 0.5s ease, transform 0.5s ease;  */
 }
 
  .image {
     display: grid;
     place-items: center;
     margin-bottom: 1rem;
-    opacity: 0; 
-    transition: opacity 1.5s ease; 
+    opacity: 1; 
+    transition: opacity 0.5s ease; 
 
 } 
 .section:hover .image {
     opacity: 2; 
 }
+.action_btns a:hover{
+  color: var(--extra-light);
 
-/*  */
+}
+.action_btns a{
+  color: var(--primary-color-dark);
+}
+.icons{
+  padding: 2rem 0 0 0;
+  margin-left: 40px;
+  }
+  .ibt {
+    display: flex;
+    margin-top: 0.5rem;
+    }
+    .ibt a{
+     
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        /* background: linear-gradient(45deg, #1abc9c, #149279); */
+        background: linear-gradient(270deg,#a855f7,#9333ea);
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 1.5rem;
+        transition: 0.3s;
+        font-size: 20px;
+        padding: 5px;
+        }
+        /*  */
 .we{
     display: flex;
     align-items: center;
@@ -772,7 +802,10 @@ background: linear-gradient(#ffdad5,#fce4ea);
         padding: 2rem 0;
         
     }
-
+    
+.image{
+  margin-top: -150px;
+}
     ul li {
         text-align: center;
         margin-bottom: 1rem;
@@ -782,6 +815,9 @@ background: linear-gradient(#ffdad5,#fce4ea);
         .overlay-section {
                   
                 z-index: 5; 
+        }
+        .icons{
+       transform: translateX(70px);
         }
 
     }
