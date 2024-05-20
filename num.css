@@ -126,6 +126,7 @@ ul li a:hover{
     line-height: 1.5rem;
     color: var(--text-light);
     margin-bottom: 0.2rem;
+    text-align: justify;
 }
 .action_btns{
 display: flex;
