@@ -112,14 +112,14 @@ ul li a:hover{
     text-align: center;
     /* margin-left: 300px; */
 }
-.title{
+.titles{
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 3rem;
     color: var(--text-dark);
     margin-bottom: 2rem;
 }
-.title span{
+.titles span{
     font-weight: 600;
 
 }
