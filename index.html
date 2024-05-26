@@ -65,7 +65,6 @@
                 <p class="subtitle">HELLO</p>
                 <h1 class="title" >ABOUT <span id="typed-text" class="me"></span></h1>
                 <p class="description">
-                 
                  Hello, and welcome to my profile! I am a dedicated and enthusiastic individual currently pursuing a Bachelor's degree in Technology (BTECH).
                 </p>
                 <p class="description">
@@ -101,63 +100,66 @@
 
     </section>
 
-  <!--  -->
-  <section class="we" id="Skills">
-    <h1 class="h1">Skills page</h1>
-  <div class="wrapper">
-    <div class="card htt">
-      <div class="circle">
-        <div class="bar"></div>
-        <div class="box"><span></span></div>
+<section class="ed">
+<div class="containerss" id="Skills">
+  <h1 class="title">My Skills</h1>
+  <div class="skills">
+      <div class="skill">
+          <div class="circle" data-percent="90">
+              <div class="inner-circle">90%</div>
+          </div>
+          <div class="skill-name">HTML</div>
       </div>
-      <div class="text">HTML & CSS</div>
-    </div>
-
-    <div class="card js">
-      <div class="circle">
-        <div class="bar"></div>
-        <div class="box"><span></span></div>
+      <div class="skill">
+          <div class="circle" data-percent="50">
+              <div class="inner-circle">50%</div>
+          </div>
+          <div class="skill-name">CSS</div>
       </div>
-      <div class="text">JavaScript</div>
-    </div>
-    
-    <div class="card react">
-      <div class="circle">
-        <div class="bar"></div>
-        <div class="box"><span></span></div>
+      <div class="skill">
+          <div class="circle" data-percent="40">
+              <div class="inner-circle">40%</div>
+          </div>
+          <div class="skill-name">JavaScript</div>
       </div>
-      <div class="text">React js</div>
-    </div>
-    <div class="card c">
-      <div class="circle">
-        <div class="bar"></div>
-        <div class="box"><span></span></div>
+      <div class="skill">
+          <div class="circle" data-percent="55">
+              <div class="inner-circle">55%</div>
+          </div>
+          <div class="skill-name">Bootstrap</div>
       </div>
-      <div class="text">C Programming</div>
-    </div>
-    <div class="card python">
-        <div class="circle">
-          <div class="bar"></div>
-          <div class="box"><span></span></div>
+      <div class="skill">
+          <div class="circle" data-percent="25">
+              <div class="inner-circle">25%</div>
+          </div>
+          <div class="skill-name">React js</div>
+      </div>
+      <div class="skill">
+          <div class="circle" data-percent="10">
+              <div class="inner-circle">10%</div>
+          </div>
+          <div class="skill-name">Node js</div>
+      </div>
+      <div class="skill">
+          <div class="circle" data-percent="35">
+              <div class="inner-circle">35%</div>
+          </div>
+          <div class="skill-name">c programming</div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percent="20">
+            <div class="inner-circle">20%</div>
         </div>
-        <div class="text">Python</div>
+        <div class="skill-name">Python</div>
+    </div>
+    <div class="skill">
+      <div class="circle" data-percent="40">
+          <div class="inner-circle">40%</div>
       </div>
-      <div class="card java">
-        <div class="circle">
-          <div class="bar"></div>
-          <div class="box"><span></span></div>
-        </div>
-        <div class="text">JAVA</div>
-      </div>
-      <div class="card node">
-        <div class="circle">
-          <div class="bar"></div>
-          <div class="box"><span></span></div>
-        </div>
-        <div class="text">Node js</div>
-      </div>
-      
+      <div class="skill-name">JavaScript</div>
   </div>
+  </div>
+</div>
 </section>
 <!--  -->
 <section class="portfolio" id="pro">
@@ -281,6 +283,16 @@
       backSpeed: 200,
       loop: true
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const circles = document.querySelectorAll(".circle");
+  
+      circles.forEach(circle => {
+          const percent = circle.getAttribute("data-percent");
+          circle.style.setProperty('--percent', percent);
+      });
+  });
+  
   </script>
 </body>
 </html>
