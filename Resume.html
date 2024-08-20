@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resume</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
   /* Your CSS styles here */
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
   :root {
-    --main-color:#a855f7;
+    --main-color:#00aaa0;
     --title-color: #242329;
     --description-color: #454545;
     --light-color: #BABABA;
@@ -94,13 +95,13 @@ scroll-behavior: smooth;
   }
 
   .resume .main-content .box:hover {
-    background: var(--main-color);
+    background:#ffc9d8;
     color: #fff;
   }
 
   .resume .main-content .box:hover p {
     color: #fff;
-    transition: .5s;
+    transition: .8s;
   }
 
   .resume .main-content .box::before {
@@ -194,7 +195,7 @@ scroll-behavior: smooth;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -205,13 +206,18 @@ scroll-behavior: smooth;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
-    background-color:#9333ea;
+    background-color:#a855f7;
 }
 
   /* Awards */
   .resume .main-content .awards .box::before {
     content: "\f0e8";
-}
+    
+  }
+  .resume .main-content {
+   
+    padding: 20px;
+  }
 @media only screen and (max-width: 992px) {
     .resume .container {
         column-gap: 40px;
@@ -282,8 +288,9 @@ scroll-behavior: smooth;
 
 .section-title {
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
     margin: 2px 0 10px;
+    color:#fda403;
 }
 
 .section-description-title {
@@ -426,10 +433,10 @@ scroll-behavior: smooth;
                             <span data-progress="60"></span>
                         </div>
                     </div>
-                    <div class="progress-bars" style="width: 15%;">
+                    <div class="progress-bars" style="width: 35%;">
                         <div class="text">
-                            <span>NodeJs</span>
-                            <span>15%</span>
+                            <span>Spring Boot</span>
+                            <span>35%</span>
                         </div>
                         <div class="progress-bar">
                             <span data-progress="75"></span>
@@ -440,9 +447,9 @@ scroll-behavior: smooth;
                 </div>
                 <!-- ================programming========================== -->
             <div class="skills-container">
-                <div class="progress-bars" style="width: 25%;">
+                <div class="progress-bars" style="width: 45%;">
                     <div class="text">
-                        <span>Cprogramming</span>
+                        <span>C programming</span>
                         <span>25%</span>
                     </div>
                     <div class="progress-bar">
@@ -530,7 +537,7 @@ scroll-behavior: smooth;
   });
 
   var typed = new Typed('#typed-text', {
-    strings: ["OF SRIRAM SANATH", "OF SRIRAM SANATH"],
+    strings: ["OF SRIRAM SANATH", "OF NOTHING_8"],
     typeSpeed: 30,
     backSpeed: 30,
     loop: true

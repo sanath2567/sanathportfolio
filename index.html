@@ -9,6 +9,7 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="num.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
@@ -94,7 +95,7 @@
             </div>
             
             <div class="image">
-                <img src="./WhatsApp_Image_2024-03-31_at_2.19.23_PM-1KsTSoql_-transformed.jpeg" alt="port" >
+                <img src="./WhatsApp_Image_2024-03-31_at_2.19.23_PM-1KsTSoql_-transformed.jpeg" alt="port" draggable="false" oncontextmenu="return false;">
             </div>
         </div>
 
@@ -135,10 +136,10 @@
           <div class="skill-name">React js</div>
       </div>
       <div class="skill">
-          <div class="circle" data-percent="10">
-              <div class="inner-circle">10%</div>
+          <div class="circle" data-percent="30">
+              <div class="inner-circle">30%</div>
           </div>
-          <div class="skill-name">Node js</div>
+          <div class="skill-name">Spring Boot</div>
       </div>
       <div class="skill">
           <div class="circle" data-percent="35">
@@ -153,17 +154,17 @@
         <div class="skill-name">Python</div>
     </div>
     <div class="skill">
-      <div class="circle" data-percent="40">
-          <div class="inner-circle">40%</div>
+      <div class="circle" data-percent="50">
+          <div class="inner-circle">50%</div>
       </div>
-      <div class="skill-name">JavaScript</div>
+      <div class="skill-name">Java</div>
   </div>
   </div>
 </div>
 </section>
 <!--  -->
 <section class="portfolio" id="pro">
-  <h2 class="heading">Latest <span>Projects</span></h2>
+  <h2 class="heading" style="color: #f76b8a; font-size:30px">Latest <span>Projects</span></h2>
   <div class="protfolio-container">
     <div class="portfolio-box">
       <a href="https://nothinga8.netlify.app/">
@@ -288,7 +289,14 @@
           circle.style.setProperty('--percent', percent);
       });
   });
-  
+  document.querySelector('img').addEventListener('mousedown', function(e) {
+    e.preventDefault(); // Prevents image from being clicked or dragged
+});
+
+document.querySelector('img').addEventListener('contextmenu', function(e) {
+    e.preventDefault(); // Prevents right-click context menu
+});
+
   </script>
 </body>
 </html>

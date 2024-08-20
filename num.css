@@ -171,8 +171,9 @@ gap: 1rem;
     
 }
 .image img{
-    width: min(25rem,70%);
+    width: min(25rem,80%);
     border-radius: 20%;
+ 
    
 }
 /*  */
@@ -377,7 +378,7 @@ h3 {
 }
 .circle[data-percent="90"] {
     --percent: 90;
-    --color: #e44d26;
+    --color: #ff9a3c;
 }
 .circle[data-percent="20"] {
   --percent: 20;
@@ -396,6 +397,10 @@ h3 {
 .circle[data-percent="55"] {
     --percent: 55;
     --color: #306998;
+}
+.circle[data-percent="30"] {
+  --percent: 30;
+  --color: #9fd3c7;
 }
 .circle[data-percent="35"]{
     --percent: 35;
