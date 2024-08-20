@@ -100,3 +100,21 @@ inputs.forEach((input) => {
       }
     });
   });
+
+
+  // 
+
+ 
+  // Disable right-click
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable specific key combinations
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'F12' || 
+        (event.ctrlKey && event.shiftKey && event.key === 'I') || 
+        (event.ctrlKey && event.shiftKey && event.key === 'J') || 
+        (event.ctrlKey && event.key === 'U')) {
+      event.preventDefault();
+    }
+  });
+

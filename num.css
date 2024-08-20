@@ -179,11 +179,11 @@ gap: 1rem;
 /*  */
 .overlay-section {
     position: relative;
-    background-image: url('./images/WhatsApp\ Image\ 2024-03-20\ at\ 7.14.06\ PM\ \(1\).jpeg'); /* Change the image path accordingly */
+    background-image: url('./images/WhatsApp\ Image\ 2024-03-20\ at\ 7.14.06\ PM\ \(1\).jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white; /* Text color */
+    color: white; 
     height: 100vh;
     display: flex;
     justify-content: center;
