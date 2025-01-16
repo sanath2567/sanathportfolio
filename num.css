@@ -385,14 +385,14 @@ h3 {
 
   .skill-image {
       width: 200px; /* Medium size */
-      height: 150px;
+      height: 250px;
   }
   .skills_h1{
     color:var(--secondary-color);
     text-align: center;
   }
   #par{
-    width:100px;
+    width:150px;
   }
 }
 
