@@ -130,40 +130,7 @@ ul li a:hover{
     margin-bottom: 0.2rem;
     text-align: justify;
 }
-/* .action_btns{
-display: flex;
-gap: 1rem;
-}
-.action_btns button{
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 1rem 2rem;
-    outline: none;
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
-    transition: .3s;
-    cursor: pointer;
-}
 
-.hire_me{
-    background-color: var(--primary-color);
-    color: #ffffff;
-
-}
-.hire_me:hover{
-    background-color: var(--primary-color-dark);
-
-}
-.portfoilo{
-    color: var(--primary-color);
-
-}
-.portfoilo:hover{
-    background-color: var(--primary-color-dark);
-    color: #ffffff;
-
-} */
 .action_btns {
   text-align: center; 
   margin: 20px 30px; 
@@ -291,7 +258,7 @@ h3 {
     min-height: 100vh;
     max-width: var(--max-width);
     margin: auto;
-    padding: 1rem;
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12rem;
@@ -380,8 +347,89 @@ h3 {
     margin-left: 80px;
 }
 
-/*  */
-.skills{
+/* skills */
+
+
+/* General styles for the skills section */
+.skills_h1{
+  color:var(--primary-color);
+  text-align: center;
+}
+#skills-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 per row */
+  gap: 20px; /* Spacing between items */
+  padding: 20px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-image {
+  width: 200px; /* Default size for larger screens */
+  height: 200px;
+  object-fit: contain; /* Maintains aspect ratio */
+  transition: all 0.3s ease; /* Smooth resizing */
+}
+
+/* Styles for tablets (landscape mode, medium screens) */
+@media (max-width: 768px) {
+  #skills-section {
+      grid-template-columns: repeat(2, 1fr); /* 2 per row */
+      gap: 15px;
+
+  }
+
+  .skill-image {
+      width: 200px; /* Medium size */
+      height: 150px;
+  }
+  .skills_h1{
+    color:var(--secondary-color);
+    text-align: center;
+  }
+  #par{
+    width:100px;
+  }
+}
+
+/* Styles for small screens (mobile) */
+@media (max-width: 480px) {
+  #skills-section {
+      grid-template-columns: repeat(1, 1fr); /* 1 per row */
+      gap: 15px;
+  }
+
+  .skill-image {
+      width: 100px; /* Smaller size */
+      height: 100px;
+  }
+  .skills_h1{
+    color:var(--primary-color-dark);
+    text-align: center;
+  }
+  #par{
+    width:120px;
+  }
+  
+}
+@media (max-width: 360px) {
+  #skills-section {
+      grid-template-columns: repeat(1, 1fr); /* 1 per row */
+      gap: 10px;
+  }
+
+  .skill-image {
+      width: 100px; /* Smaller size */
+      height: 100px;
+  }
+  
+}
+
+/* .skills{
   min-height: 100vh;
   max-height: fit-content;
   width: 100%;
@@ -406,7 +454,7 @@ h3 {
   height: 15vh;
   width: 15vw;
 
-}
+} */
 /* .skill{
 
 border-top: 10px solid aqua;
@@ -424,7 +472,7 @@ transition-timing-function:ease-in;
 }*/
 
 /*  */
-#skills-section {
+/* #skills-section {
   background-color: white;
           display: flex;
           justify-content: center;
@@ -447,24 +495,24 @@ transition-timing-function:ease-in;
           text-align: center;
           margin: 100px;
           padding: 10px;
-      }
+      } */
 
-      .skill-image {
+      /* .skill-image {
           /* max-width: 200px;
           max-height: 200px;
-          height: auto; */
-          width: 200px; /* Desired width */
-          height: 200px; /* Desired height */
+          height: auto; 
+          width: 200px;
+          height: 200px;
           object-fit: cover; 
-      }
-      .skill-image img{
+      } */
+      /* .skill-image img{
         
       }
     
       @media screen and (max-width: 992px) {
          
       }
-      /* Media query for screens smaller than 768px */
+      /* Media query for screens smaller than 768px 
       @media screen and (max-width: 768px) {
           .skill-item {
               flex-basis: calc(50% - 20px);
@@ -478,8 +526,8 @@ transition-timing-function:ease-in;
         .skill-item {
             flex-basis: calc(100% - 20px);
         }
-    }
-    @media screen and (max-width: 480px){
+    } */
+    /* @media screen and (max-width: 480px){
          
          .ee{
             display: block;
@@ -492,7 +540,7 @@ transition-timing-function:ease-in;
          #skill-image{
             margin-top: 80px;
          }
-    }
+    } */
 
 /*  */
 
