@@ -753,7 +753,7 @@ transform: scale(1.05);
 .sp1{
 font-size: 30px;
 }
-.h35{
+.h3{
 font-size: 30px;
 }
 .info img{
@@ -786,6 +786,16 @@ font-variation-settings:
   "GRAD" 0;
 }
 
+.svg-icon {
+  fill: green; /* Sets the SVG path color to green */
+  width: 24px; /* Optional: Adjust size */
+  height: 24px; /* Optional: Adjust size */
+  transition: transform 0.2s ease; /* Optional: Smooth scaling on hover */
+}
+
+.svg-icon:hover {
+  transform: scale(1.2); /* Optional: Scale effect on hover */
+}
   /* Media queries for responsiveness */
 @media (max-width: 800px) {
 .contact-container {
