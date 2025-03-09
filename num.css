@@ -38,7 +38,7 @@ nav{
     justify-content: space-between;
 }
 nav .logo a{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
     color: var(--primary-color);
     transition: .3s;
@@ -77,7 +77,7 @@ ul li a{
     font-weight: 600;
     color: var(--text-dark);
     transition: 0.3s;
-    font-size: 18px;
+    font-size: 22px;
 
 }
 ul li a:hover{
@@ -204,7 +204,7 @@ ul li a:hover{
 }
 /*  */
 .contents h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 20px;
   font-family: "Roboto Serif", serif;
   /* font-optical-sizing: auto; */
@@ -215,7 +215,7 @@ ul li a:hover{
 }
 .h3{
   font-family: "Roboto Serif", serif;
-  /* font-optical-sizing: auto; */
+  
   font-weight: 600;
 }
 .contents {
@@ -279,7 +279,11 @@ h3 {
 .section .content {
     opacity: 2;
     transform: translateX(0); 
+      /* transition: opacity 0.5s ease, transform 0.5s ease;  */
 }
+/* .section:hover .content{
+  opacity: 0;
+} */
  .image {
     display: grid;
     place-items: center;
@@ -371,7 +375,85 @@ h3 {
   transition: all 0.3s ease; /* Smooth resizing */
 }
 
+/* Styles for tablets (landscape mode, medium screens) */
+@media (max-width: 768px) {
+  #skills-section {
+      grid-template-columns: repeat(2, 1fr); /* 2 per row */
+      gap: 15px;
 
+  }
+
+  .skill-image {
+      width: 200px; /* Medium size */
+      height: 250px;
+  }
+  .skills_h1{
+    color:var(--secondary-color);
+    text-align: center;
+  }
+  #par{
+    width:150px;
+  }
+}
+
+/* Styles for small screens (mobile) */
+@media (max-width: 480px) {
+  #skills-section {
+      grid-template-columns: repeat(2, 1fr); /* 1 per row */
+      gap: 15px;
+  }
+
+  .skill-image {
+      width: 140px; /* Smaller size */
+      height: 140px;
+  }
+  .skills_h1{
+    color:var(--primary-color-dark);
+    text-align: center;
+  }
+  #par{
+    width:130px;
+  }
+  
+}
+@media (max-width: 360px) {
+  #skills-section {
+      grid-template-columns: repeat(2, 1fr); /* 1 per row */
+      gap: 10px;
+  }
+
+  .skill-image {
+    width: 140px; /* Smaller size */
+    height: 140px;
+}
+#par{
+  width:130px;
+}
+  
+}
+
+
+
+
+
+    
+
+@media (max-width: 600px) {
+    .containerss {
+        padding: 10px;
+        margin-left: -40px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+    .inner-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 1em;
+    }
+}
+  
   .portfolio {
     padding: 20px;
     background-color:#ffffff;
@@ -863,82 +945,4 @@ background: linear-gradient(#ffdad5,#fce4ea);
          display: none;
        
         }
-      }
-
-      @media (max-width: 768px) {
-        #skills-section {
-            grid-template-columns: repeat(2, 1fr); /* 2 per row */
-            gap: 15px;
-      
-        }
-      
-        .skill-image {
-            width: 200px; /* Medium size */
-            height: 250px;
-        }
-        .skills_h1{
-          color:var(--secondary-color);
-          text-align: center;
-        }
-        #par{
-          width:150px;
-        }
-      }
-      
-      /* Styles for small screens (mobile) */
-      @media (max-width: 480px) {
-        #skills-section {
-            grid-template-columns: repeat(2, 1fr); /* 1 per row */
-            gap: 15px;
-        }
-      
-        .skill-image {
-            width: 140px; /* Smaller size */
-            height: 140px;
-        }
-        .skills_h1{
-          color:var(--primary-color-dark);
-          text-align: center;
-        }
-        #par{
-          width:130px;
-        }
-        
-      }
-      @media (max-width: 360px) {
-        #skills-section {
-            grid-template-columns: repeat(2, 1fr); /* 1 per row */
-            gap: 10px;
-        }
-      
-        .skill-image {
-          width: 140px; /* Smaller size */
-          height: 140px;
-      }
-      #par{
-        width:130px;
-      }
-        
-      }
-      
-      
-      
-      
-      
-          
-      
-      @media (max-width: 600px) {
-          .containerss {
-              padding: 10px;
-              margin-left: -40px;
-          }
-          .circle {
-              width: 100px;
-              height: 100px;
-          }
-          .inner-circle {
-              width: 80px;
-              height: 80px;
-              font-size: 1em;
-          }
       }
