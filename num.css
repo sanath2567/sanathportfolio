@@ -181,7 +181,7 @@ ul li a:hover{
 /*  */
 .overlay-section {
     position: relative;
-    background-image: url('./images/WhatsApp\ Image\ 2024-03-20\ at\ 7.14.06\ PM\ \(1\).jpeg');
+    background-image: url('./images/bg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -279,11 +279,7 @@ h3 {
 .section .content {
     opacity: 2;
     transform: translateX(0); 
-      /* transition: opacity 0.5s ease, transform 0.5s ease;  */
 }
-/* .section:hover .content{
-  opacity: 0;
-} */
  .image {
     display: grid;
     place-items: center;
@@ -375,196 +371,7 @@ h3 {
   transition: all 0.3s ease; /* Smooth resizing */
 }
 
-/* Styles for tablets (landscape mode, medium screens) */
-@media (max-width: 768px) {
-  #skills-section {
-      grid-template-columns: repeat(2, 1fr); /* 2 per row */
-      gap: 15px;
 
-  }
-
-  .skill-image {
-      width: 200px; /* Medium size */
-      height: 250px;
-  }
-  .skills_h1{
-    color:var(--secondary-color);
-    text-align: center;
-  }
-  #par{
-    width:150px;
-  }
-}
-
-/* Styles for small screens (mobile) */
-@media (max-width: 480px) {
-  #skills-section {
-      grid-template-columns: repeat(2, 1fr); /* 1 per row */
-      gap: 15px;
-  }
-
-  .skill-image {
-      width: 140px; /* Smaller size */
-      height: 140px;
-  }
-  .skills_h1{
-    color:var(--primary-color-dark);
-    text-align: center;
-  }
-  #par{
-    width:130px;
-  }
-  
-}
-@media (max-width: 360px) {
-  #skills-section {
-      grid-template-columns: repeat(2, 1fr); /* 1 per row */
-      gap: 10px;
-  }
-
-  .skill-image {
-    width: 140px; /* Smaller size */
-    height: 140px;
-}
-#par{
-  width:130px;
-}
-  
-}
-
-/* .skills{
-  min-height: 100vh;
-  max-height: fit-content;
-  width: 100%;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
-}
-.skillContainer{
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 5%;
-}
-.skillHeading::first-letter{
-  color: var(--color);
-  font-size: 40px;
-}
-.skillLogo{
-  height: 15vh;
-  width: 15vw;
-
-} */
-/* .skill{
-
-border-top: 10px solid aqua;
-color: black;
-margin: 10px;
-padding: 10px;
-min-width: 10vw;
- max-width: fit-content;
-text-align: center;
-border-radius: 5px;
-flex-grow: 1;
-background: rgb(214,247,247);
-background: linear-gradient(149deg, rgba(214,247,247,1) 60%, rgba(83,254,254,1) 100%);
-transition-timing-function:ease-in;
-}*/
-
-/*  */
-/* #skills-section {
-  background-color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          padding: 20px;
-      }
-      .skills_h1 {
-        color: #4A90E2; 
-        font-size: 3rem; 
-        font-family: Arial, sans-serif; 
-        text-align: center; 
-      
-        margin-top:30px ;
-      }
-    
- 
-      .skill-item {
-          flex: 1;
-          text-align: center;
-          margin: 100px;
-          padding: 10px;
-      } */
-
-      /* .skill-image {
-          /* max-width: 200px;
-          max-height: 200px;
-          height: auto; 
-          width: 200px;
-          height: 200px;
-          object-fit: cover; 
-      } */
-      /* .skill-image img{
-        
-      }
-    
-      @media screen and (max-width: 992px) {
-         
-      }
-      /* Media query for screens smaller than 768px 
-      @media screen and (max-width: 768px) {
-          .skill-item {
-              flex-basis: calc(50% - 20px);
-              margin: 5px;
-          }
-           .ee{
-              display: none;
-           }
-      }
-      @media screen and (max-width: 576px) {
-        .skill-item {
-            flex-basis: calc(100% - 20px);
-        }
-    } */
-    /* @media screen and (max-width: 480px){
-         
-         .ee{
-            display: block;
-           transform: translateX(90px);
-           transform: translateY(280px);
-           font-size: 50px;
-           
-           
-         }
-         #skill-image{
-            margin-top: 80px;
-         }
-    } */
-
-/*  */
-
-
-@media (max-width: 600px) {
-    .containerss {
-        padding: 10px;
-        margin-left: -40px;
-    }
-    .circle {
-        width: 100px;
-        height: 100px;
-    }
-    .inner-circle {
-        width: 80px;
-        height: 80px;
-        font-size: 1em;
-    }
-}
-  /*  */
-  /* projects page */
   .portfolio {
     padding: 20px;
     background-color:#ffffff;
@@ -794,9 +601,9 @@ font-variation-settings:
 }
 
 .svg-icon:hover {
-  transform: scale(1.2); /* Optional: Scale effect on hover */
+  transform: scale(1.2); 
 }
-  /* Media queries for responsiveness */
+  
 @media (max-width: 800px) {
 .contact-container {
 flex-direction: column;
@@ -1056,4 +863,82 @@ background: linear-gradient(#ffdad5,#fce4ea);
          display: none;
        
         }
+      }
+
+      @media (max-width: 768px) {
+        #skills-section {
+            grid-template-columns: repeat(2, 1fr); /* 2 per row */
+            gap: 15px;
+      
+        }
+      
+        .skill-image {
+            width: 200px; /* Medium size */
+            height: 250px;
+        }
+        .skills_h1{
+          color:var(--secondary-color);
+          text-align: center;
+        }
+        #par{
+          width:150px;
+        }
+      }
+      
+      /* Styles for small screens (mobile) */
+      @media (max-width: 480px) {
+        #skills-section {
+            grid-template-columns: repeat(2, 1fr); /* 1 per row */
+            gap: 15px;
+        }
+      
+        .skill-image {
+            width: 140px; /* Smaller size */
+            height: 140px;
+        }
+        .skills_h1{
+          color:var(--primary-color-dark);
+          text-align: center;
+        }
+        #par{
+          width:130px;
+        }
+        
+      }
+      @media (max-width: 360px) {
+        #skills-section {
+            grid-template-columns: repeat(2, 1fr); /* 1 per row */
+            gap: 10px;
+        }
+      
+        .skill-image {
+          width: 140px; /* Smaller size */
+          height: 140px;
+      }
+      #par{
+        width:130px;
+      }
+        
+      }
+      
+      
+      
+      
+      
+          
+      
+      @media (max-width: 600px) {
+          .containerss {
+              padding: 10px;
+              margin-left: -40px;
+          }
+          .circle {
+              width: 100px;
+              height: 100px;
+          }
+          .inner-circle {
+              width: 80px;
+              height: 80px;
+              font-size: 1em;
+          }
       }
