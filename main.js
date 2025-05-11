@@ -118,3 +118,19 @@ inputs.forEach((input) => {
     }
   });
 
+
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const boxes = document.querySelectorAll(".box");
+      if (entry.isIntersecting) {
+        boxes.forEach(box => box.classList.add("visible"));
+      } else {
+        boxes.forEach(box => box.classList.remove("visible"));
+      }
+    });
+  }, {
+    threshold: 0.2 
+  });
+
+  observer.observe(document.querySelector("#animate-section"));
