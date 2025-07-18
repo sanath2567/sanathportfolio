@@ -24,6 +24,16 @@ A fully responsive and minimal portfolio website built using **HTML**, **CSS**, 
 
 ## 📂 Project Structure
 
+portfolio-website/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│ ├── images/
+│ └── resume.pdf
+└── README.md
+
+
 ## 🚀 Deployment
 
 This site is deployed using **GitHub Pages**:
